@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632337175829",
+    "firebase_url": "https://modicarekannada.firebaseio.com",
+    "project_id": "modicarekannada",
+    "storage_bucket": "modicarekannada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632337175829:android:83ef3ea9b543baf2",
+        "android_client_info": {
+          "package_name": "com.modicareproductskannada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632337175829-rjgpt2c766ee2t5e1m4na49661ev5d60.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7iMwdMu5jb6SeUTkN5pUxyYEbIvbUjiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632337175829-rjgpt2c766ee2t5e1m4na49661ev5d60.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
