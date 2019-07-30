@@ -2,10 +2,11 @@ import {Platform, StyleSheet, Text, View, StatusBar, TouchableHighlight} from 'r
 
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
+import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-ads-facebook';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
-const advert2 = firebase.admob().rewarded('ca-app-pub-9784974231819956/4984604967')
-const advert = firebase.admob().interstitial('ca-app-pub-6061663703850511/9597625632')
+const advert2 = firebase.admob().rewarded('ca-app-pub-9784974231819956/7905549252')
+const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/6280921482')
 const request = new AdRequest();
 request.addKeyword('foobar');
 export default class Welcome extends Component {
@@ -37,6 +38,14 @@ setTimeout(() => {
     title: "Welcome"
   }
   goToProducts = () => {
+    AdSettings.addTestDevice(AdSettings.currentDeviceHash);
+    InterstitialAdManager.showAd("434555400602082_434557547268534")
+  .then(didClick => {
+    console.log('working')
+  })
+  .catch(error => {
+    console.log(error, 'rror')
+  });
     this.props.navigation.navigate('ScreenOne' )
   }
   render() {
@@ -67,7 +76,7 @@ setTimeout(() => {
        <Banner
        style={{alignSelf:'center',marginLeft:20}}
     size={"LARGE_BANNER"}
-  unitId={"ca-app-pub-6061663703850511/2125070544"}
+  unitId={"ca-app-pub-9784974231819956/8097120940"}
   request={request.build()}
   onAdLoaded={() => {
     console.log('Advert loaded');

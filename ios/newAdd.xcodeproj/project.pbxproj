@@ -61,6 +61,7 @@
 		8309807D7FAE484A96D9C6CE /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 564C77912D7246D79213BB78 /* libSplashScreen.a */; };
 		4E741EB1D76A4ED4B67D6A49 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91DDE805446245CA9A80B868 /* AntDesign.ttf */; };
 		44C1755497F84CD88D43CCBF /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FF7CFA4865D47A7AF8AA23A /* Fontisto.ttf */; };
+		9BC4C4D2199A43388CFCEE2A /* libReactNativeAdsFacebook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC247786249F4F4184C5FCBD /* libReactNativeAdsFacebook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -396,6 +397,8 @@
 		564C77912D7246D79213BB78 /* libSplashScreen.a */ = {isa = PBXFileReference; name = "libSplashScreen.a"; path = "libSplashScreen.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		91DDE805446245CA9A80B868 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		9FF7CFA4865D47A7AF8AA23A /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC27913A29494892A36397CC /* ReactNativeAdsFacebook.xcodeproj */ = {isa = PBXFileReference; name = "ReactNativeAdsFacebook.xcodeproj"; path = "../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		EC247786249F4F4184C5FCBD /* libReactNativeAdsFacebook.a */ = {isa = PBXFileReference; name = "libReactNativeAdsFacebook.a"; path = "libReactNativeAdsFacebook.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +433,7 @@
 				1D9DBE4053CD4A638DF2B424 /* libReactNativePermissions.a in Frameworks */,
 				E6464E51B81549DFB0EE036E /* libRNVectorIcons.a in Frameworks */,
 				8309807D7FAE484A96D9C6CE /* libSplashScreen.a in Frameworks */,
+				9BC4C4D2199A43388CFCEE2A /* libReactNativeAdsFacebook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +629,7 @@
 				BDB0BD39D642412B88817A07 /* ReactNativePermissions.xcodeproj */,
 				70C83A673F874A6F97D0E2FA /* RNVectorIcons.xcodeproj */,
 				8349E687A634409E9DBD1008 /* SplashScreen.xcodeproj */,
+				DC27913A29494892A36397CC /* ReactNativeAdsFacebook.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1299,6 +1304,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1308,6 +1314,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Debug;
@@ -1335,6 +1342,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1344,6 +1352,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Release;
@@ -1372,6 +1381,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Debug;
@@ -1399,6 +1409,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Release;
@@ -1434,6 +1445,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1443,6 +1455,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Debug;
@@ -1478,6 +1491,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1487,6 +1501,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Release;
@@ -1521,6 +1536,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1530,6 +1546,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Debug;
@@ -1564,6 +1581,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1573,6 +1591,7 @@
 					"$(SRCROOT)/../node_modules/react-native-permissions/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-splash-screen\ios",
+					"$(SRCROOT)/../node_modules/react-native-fbads/ios/ReactNativeAdsFacebook",
 				);
 			};
 			name = Release;

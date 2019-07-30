@@ -140,6 +140,7 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-fbads')
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-splash-screen')
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -152,6 +153,7 @@ dependencies {
    implementation "com.google.firebase:firebase-messaging:18.0.0"
   implementation "com.google.firebase:firebase-ads:17.2.1"
  implementation "com.google.firebase:firebase-storage:17.0.0"
+   compile 'com.facebook.android:audience-network-sdk:5.+'
 
 }
 
