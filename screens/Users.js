@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {  Card, Divider, SearchBar, List, ListItem  } from 'react-native-elements';
 import { db } from './config';
 import firebase from 'react-native-firebase';
-import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-ads-facebook';
+import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-fbads';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
 const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/5449517120')

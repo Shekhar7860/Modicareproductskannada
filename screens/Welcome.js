@@ -2,7 +2,7 @@ import {Platform, StyleSheet, Text, View, StatusBar, TouchableHighlight} from 'r
 
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
-import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-ads-facebook';
+import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-fbads';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
 const advert2 = firebase.admob().rewarded('ca-app-pub-9784974231819956/7905549252')
