@@ -1,4 +1,4 @@
-import {Platform, StyleSheet, Text, View, StatusBar, TouchableHighlight} from 'react-native';
+import {Platform, StyleSheet, Text, View, Share,  StatusBar, TouchableHighlight, TouchableOpacity, Image} from 'react-native';
 
 import React, { Component } from 'react';
 import firebase from 'react-native-firebase';
@@ -7,6 +7,8 @@ const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
 const advert2 = firebase.admob().rewarded('ca-app-pub-9784974231819956/7905549252')
 const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/6280921482')
+const advert3 = firebase.admob().interstitial('ca-app-pub-9784974231819956/8546444980')
+const advert4 = firebase.admob().interstitial('ca-app-pub-9784974231819956/3485689997')
 const request = new AdRequest();
 request.addKeyword('foobar');
 export default class Welcome extends Component {
@@ -38,16 +40,40 @@ setTimeout(() => {
     title: "Welcome"
   }
   goToProducts = () => {
-    AdSettings.addTestDevice(AdSettings.currentDeviceHash);
-    InterstitialAdManager.showAd("434555400602082_434557547268534")
-  .then(didClick => {
-    console.log('working')
-  })
-  .catch(error => {
-    console.log(error, 'rror')
-  });
+    advert3.loadAd(request.build())
+
+    advert3.on('onAdLoaded', () => {
+       console.log('Advert2 ready to show.')
+    })
+    
+    advert3.show()
     this.props.navigation.navigate('ScreenOne' )
   }
+
+
+  share = () => {
+    advert4.loadAd(request.build())
+
+  advert4.on('onAdLoaded', () => {
+     console.log('Advert2 ready to show.')
+  })
+  
+  advert4.show()
+    Share.share({
+      message: 'ಚೆಕ್ out ಟ್ ಮೊಡಿಕೇರ್ ಉತ್ಪನ್ನಗಳು - https://play.google.com/store/apps/details?id=com.modicareproductskannada&hl=en',
+      url: 'https://play.google.com/store/apps/details?id=com.modicareproductskannada&hl=en',
+      title: 'ನಿಮ್ಮ ಸ್ವಂತ ವ್ಯವಹಾರವನ್ನು ಪ್ರಾರಂಭಿಸಿ'
+    }, {
+      // Android only:
+      dialogTitle: 'ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳಿ',
+      // iOS only:
+      excludedActivityTypes: [
+        'com.apple.UIKit.activity.PostToTwitter'
+      ]
+    })
+  }
+
+
   render() {
     const { navigate } = this.props.navigation
     return (
@@ -55,7 +81,9 @@ setTimeout(() => {
                <View style={styles.toolbar}>
                     <Text style={styles.toolbarButton}></Text>
                     <Text style={styles.toolbarTitle}>ಮನೆ</Text>
-                    <Text style={styles.toolbarButton}></Text>
+                    <TouchableOpacity style={styles.toolbarButton}onPress={() => this.share()}>
+                    <Image style={{width:30,marginLeft:5,  height:30}}source={require('../images/share.png')}></Image>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.content}>
 
@@ -68,7 +96,7 @@ setTimeout(() => {
                             <TouchableHighlight style={styles.fullWidthButton} onPress={() => this.goToProducts()}>
             <Text style={styles.fullWidthButtonText}>ಪ್ರಾರಂಭಿಸೋಣ</Text>
             </TouchableHighlight>
-            <Text style={styles.messageBoxBodyText2}>ನೀವು ಮೋಡಿಕೇರ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಪ್ರಶ್ನೆಯನ್ನು ಹೊಂದಿದ್ದರೆ, ನೀವು ನನ್ನನ್ನು + 919646407363 ಗೆ ಕರೆ ಮಾಡಬಹುದು</Text>
+            <Text style={styles.messageBoxBodyText2}>ನೀವು ಮೋಡಿಕೇರ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಪ್ರಶ್ನೆಯನ್ನು ಹೊಂದಿದ್ದರೆ, ನೀವು ನನ್ನನ್ನು + 917975913409 ಗೆ ಕರೆ ಮಾಡಬಹುದು</Text>
                     </View>
 
                 </View>

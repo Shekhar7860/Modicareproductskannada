@@ -157,11 +157,11 @@ setTimeout(() => {
           />
           <View style={{flex: 1}}>
          <ScrollView>
-              <Text style={{marginTop:5}}> Benefits </Text>
+              <Text style={{marginTop:5}}> ಪ್ರಯೋಜನಗಳು </Text>
           <Text> {this.state.benefits} </Text>
-            <Text style={{marginTop:5}}> MRP Price </Text>
+            <Text style={{marginTop:5}}> ಎಂಆರ್‌ಪಿ ಬೆಲೆ </Text>
           <Text> {this.state.mrp} </Text>
-            <Text style={{marginTop:5}}> DP Price </Text>
+            <Text style={{marginTop:5}}> ಡಿಪಿ ಬೆಲೆ </Text>
           <Text> {this.state.dp} </Text>
          
           </ScrollView>

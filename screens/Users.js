@@ -65,14 +65,14 @@ export default class Users extends Component {
   
 
   goBack = () => {
-    AdSettings.addTestDevice(AdSettings.currentDeviceHash);
-    InterstitialAdManager.showAd("434555400602082_435239277200361")
-  .then(didClick => {
-    console.log('working')
-  })
-  .catch(error => {
-    console.log(error, 'rror')
-  });
+  //   AdSettings.addTestDevice(AdSettings.currentDeviceHash);
+  //   InterstitialAdManager.showAd("434555400602082_435239277200361")
+  // .then(didClick => {
+  //   console.log('working')
+  // })
+  // .catch(error => {
+  //   console.log(error, 'rror')
+  // });
     this.props.navigation.navigate('Welcome')
   }
   searchFilterFunction = text => {
