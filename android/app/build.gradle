@@ -105,8 +105,8 @@ android {
         applicationId "com.modicareproductskannada"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
-        versionName "1.5"
+        versionCode 9
+        versionName "1.9"
          multiDexEnabled true
     }
     

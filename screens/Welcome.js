@@ -5,10 +5,10 @@ import firebase from 'react-native-firebase';
 import { InterstitialAdManager, NativeAdsManager,  BannerView, AdSettings  } from 'react-native-fbads';
 const Banner = firebase.admob.Banner;
 const AdRequest = firebase.admob.AdRequest;
-const advert2 = firebase.admob().rewarded('ca-app-pub-9784974231819956/7905549252')
-const advert = firebase.admob().interstitial('ca-app-pub-9784974231819956/6280921482')
-const advert3 = firebase.admob().interstitial('ca-app-pub-9784974231819956/8546444980')
-const advert4 = firebase.admob().interstitial('ca-app-pub-9784974231819956/3485689997')
+const advert2 = firebase.admob().rewarded('ca-app-pub-7564761287983180/3487803770')
+const advert = firebase.admob().interstitial('ca-app-pub-7564761287983180/2669546126')
+const advert3 = firebase.admob().interstitial('ca-app-pub-7564761287983180/6819725889')
+const advert4 = firebase.admob().interstitial('ca-app-pub-7564761287983180/1567399207')
 const request = new AdRequest();
 request.addKeyword('foobar');
 export default class Welcome extends Component {
@@ -97,14 +97,15 @@ setTimeout(() => {
             <Text style={styles.fullWidthButtonText}>ಪ್ರಾರಂಭಿಸೋಣ</Text>
             </TouchableHighlight>
             <Text style={styles.messageBoxBodyText2}>ನೀವು ಮೋಡಿಕೇರ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಪ್ರಶ್ನೆಯನ್ನು ಹೊಂದಿದ್ದರೆ, ನೀವು ನನ್ನನ್ನು + 917975913409 ಗೆ ಕರೆ ಮಾಡಬಹುದು</Text>
+            <Text style={styles.messageBoxBodyText2}>If you want to join modicare, whatsapp your adhaar card on +918837826904</Text>
                     </View>
-
+                    
                 </View>
                 <View style={styles.footer}>
        <Banner
-       style={{alignSelf:'center',marginLeft:20}}
-    size={"LARGE_BANNER"}
-  unitId={"ca-app-pub-9784974231819956/8097120940"}
+       style={{alignSelf:'center',marginLeft:15}}
+    size={"SMALL_BANNER"}
+  unitId={"ca-app-pub-7564761287983180/4660466404"}
   request={request.build()}
   onAdLoaded={() => {
     console.log('Advert loaded');
